@@ -11,12 +11,13 @@
   </head>
 
   <body>
-   <%= render partial: 'layouts/header' %>
+    <%= render partial: 'layouts/header' %>
     <main class="py-4 mb-5"> 
       <% if notice %><p class="alert alert-warning"><%= notice %></div><% end %>
       <% if alert %><p class="alert alert-danger"><%= alert %></p><% end %>
       <%= yield %>
     </main>
+    <%= render partial: 'layouts/footer' %>
   </body>
 </html>
 
