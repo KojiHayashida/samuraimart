@@ -5,4 +5,5 @@ class Product < ApplicationRecord
   def reviews_new
     reviews.new
   end
+  acts_as_likeable
 end
